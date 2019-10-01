@@ -1,4 +1,4 @@
-/**Gets weather data and inserts it into the webpage.
+/*Gets weather data and inserts it into the webpage.
  * 
  * API Key: d214c5fcf05f3b01634b585077751866
  * API: https://darksky.net/dev
@@ -8,6 +8,11 @@
  * Depends:
  * Jquery - "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
  */
+
+ /**Logs to console.
+  * 
+  * @param {*} data     Data to log to console.
+  */
 function logger(data) {
     console.log(data)
 }
@@ -20,7 +25,7 @@ function logger(data) {
 function getWeather(latitude, longitude) {
     $.ajax({
         type:"GET",
-        url:`https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/[key]/${latitude},${longitude}`, //No Key, insert as needed
+        url:`https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${globalKey}/${latitude},${longitude}`, //No Key, insert as needed
         dataType:"JSON",
         success: (response) => {
             writeToDiv("#tempContainer", createWeatherDiv(response));
@@ -76,9 +81,9 @@ function createWeatherDiv(weatherApiObject) {
 
     newImg.attr({
         id: "weather-icon",
-        href: weatherIconPicker(),
-        width: "40px",
-        height: "40px"
+        src: weatherIconPicker(),
+        width: "50px",
+        height: "50px"
     })
     return newDiv.append(newImg, summaryDiv, precipList, tempList);
 }
@@ -92,7 +97,16 @@ function writeToDiv(divID, element="Nothing to write!") {
     $(divID).append(element)
 }
 
+var globalKey;
 $(document).ready(() => {
+    
+    //Switch to easily turn off/on API. Makes the key invalid. Make true to enable API.
+    if (false) {
+        globalKey = "d214c5fcf05f3b01634b585077751866";
+    } else {
+        globalKey = "NoKey";      
+    }
+
     getWeather(29.795662,-95.5676639)
 })
 
