@@ -10,7 +10,7 @@ function formatDistrict(name, address, city, state, zip, phone) {
         state + " " + zip + " | " + phone;
 }
 
-function displaySchoolData() {
+function displaySchoolData(num) {
     let city = document.getElementById("community").selectedIndex;
 
     let districtName = document.getElementById("district-name");

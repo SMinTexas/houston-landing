@@ -28,7 +28,7 @@ function getWeather(latitude, longitude) {
         url:`https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${globalKey}/${latitude},${longitude}`, //No Key, insert as needed
         dataType:"JSON",
         success: (response) => {
-            writeToDiv("#tempContainer", createWeatherDiv(response));
+            writeToDiv("#weather", createWeatherDiv(response));
         },
         error: (response, errString) => {
             writeToDiv("#tempContainer", "Could not retrieve weather!");
@@ -71,10 +71,10 @@ function createWeatherDiv(weatherApiObject) {
     let todaysWeather = weatherApiObject.daily.data[0]
     let newDiv = $("<div/>");
     let newImg = $("<img/>");
-    let summaryDiv = $("<div/>").text(todaysWeather.summary);   
+    let summaryDiv = $("<div/>").append($("<p/>").text(todaysWeather.summary));   
     
-    let precipList = $("<ul/>");
-    precipList.append($("<li/>").text(todaysWeather.precipType), $("<li/>").text(todaysWeather.precipProbability));
+    // let precipList = $("<ul/>");
+    summaryDiv.append($("<p/>").text(`There's a ${todaysWeather.precipProbability} chance of ${todaysWeather.precipType}`));
     
     let tempList = $("<ul/>");
     tempList.append($("<li/>").text(`High: ${todaysWeather.apparentTemperatureHigh}`), $("<li/>").text(`Low: ${todaysWeather.apparentTemperatureLow}`))
@@ -82,10 +82,12 @@ function createWeatherDiv(weatherApiObject) {
     newImg.attr({
         id: "weather-icon",
         src: weatherIconPicker(),
-        width: "50px",
-        height: "50px"
+        width: "200px",
+        height: "200px"
     })
-    return newDiv.append(newImg, summaryDiv, precipList, tempList);
+
+    newDiv.attr("id", "weatherInserted")
+    return newDiv.append(newImg, summaryDiv, tempList);
 }
 
 /**Appends an Element or Text to a div.
@@ -94,6 +96,7 @@ function createWeatherDiv(weatherApiObject) {
  * @param {(object|string)} [element="Nothing to write!"]       An element or string to write to a div or other element.
  */
 function writeToDiv(divID, element="Nothing to write!") {
+    $(divID).empty()
     $(divID).append(element)
 }
 
@@ -101,13 +104,11 @@ var globalKey;
 $(document).ready(() => {
     
     //Switch to easily turn off/on API. Makes the key invalid. Make true to enable API.
-    if (false) {
+    if (true) {
         globalKey = "d214c5fcf05f3b01634b585077751866";
     } else {
         globalKey = "NoKey";      
     }
-
-    getWeather(29.795662,-95.5676639)
 })
 
 

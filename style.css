@@ -105,7 +105,7 @@ body {
 
 .weather {
     display: flex;
-    flex-direction: columns;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     height: 200px;
@@ -115,20 +115,32 @@ body {
     /*border: 1px solid royalblue;*/
 }
 
+#weatherInserted {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#weatherInserted ul li {
+    list-style-type: none;
+    padding: 0;
+}
+
 .crime {
     display: flex;
     flex-direction: columns;
     justify-content: center;
     align-content: center;
-    height: 200px;
+    height: 370px;
     color: royalblue;
     background-color: white;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     border: 1px solid royalblue;
 }
 
 .footer {
-    position: fixed;
+    position: fixed !important;
     left: 0;
     bottom: 0;
     min-width: 100%;
