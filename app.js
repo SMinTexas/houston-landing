@@ -88,7 +88,7 @@ function hide(cssSelector) {
 }
 
 function main() {
-    let cityIndex = document.getElementById("community").selectedIndex;
+    let cityIndex = document.getElementById("community").selectedIndex -1;
 
     if (locationPicker(cityIndex) == false) {
         return false;
