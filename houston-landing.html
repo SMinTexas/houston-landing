@@ -37,21 +37,21 @@
                 <p class="welcome">Welcome to the Greater Houston Area </p>
                 <div class="dd">Please Select a Community
                     <select id="community" onchange="main()" <!--onclick="main()"-->>
-                        <option velue="-1"></option>
-                        <option value="0">Katy</option>
-                        <option value="1">Sugar Land</option>
-                        <option value="2">Cypress</option>
-                        <option value="3">The Woodlands</option>
-                        <option value="4">Kingwood</option>
-                        <option value="5">La Porte</option>
-                        <option value="6">Clear Lake</option>
-                        <option value="7">Pearland</option>
-                        <option value="8">Bellaire</option>
-                        <option value="9">Mid-Town</option>
+                        <option value="0">Choose</option>
+                        <option value="1">Katy</option>
+                        <option value="2">Sugar Land</option>
+                        <option value="3">Cypress</option>
+                        <option value="4">The Woodlands</option>
+                        <option value="5">Kingwood</option>
+                        <option value="6">La Porte</option>
+                        <option value="7">Clear Lake</option>
+                        <option value="8">Pearland</option>
+                        <option value="9">Bellaire</option>
+                        <option value="10">Mid-Town</option>
                     </select>
                 </div>
             </div>
-            <div class="schools">
+            <div class="schools hidden">
                 <div class="box-title">Schools</div>
                 <div class="data-container">
                     <div class="district">District Overview
@@ -124,10 +124,11 @@
                         </div>
                 </div>
             </div>
-                <div id="weather" class="weather">
+              
+                <div id="weather" class="weather hidden">
                     <div class="box-title">Weather</div>
                 </div>
-                <div id="myMap" class="crime">
+                <div id="myMap" class="map hidden">
                     <div class="box-title">Crime</div>
                 </div>
         </main>

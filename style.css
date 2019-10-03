@@ -156,6 +156,7 @@ body {
     list-style-type: none;
     padding: 0;
 }
+
 .crime {
     height: 170px;
     color: royalblue;
@@ -204,7 +205,9 @@ body {
     align-items: center;
     font-size: 13px;
     color: royalblue;
-/* .crime {
+}
+
+.map {
     display: flex;
     flex-direction: columns;
     justify-content: center;
@@ -212,9 +215,9 @@ body {
     height: 370px;
     color: royalblue;
     background-color: white;
-    /* opacity: 0.8; 
+    /* opacity: 0.8; */
  border: 1px solid royalblue;
-} */
+}
 
 .footer {
     position: fixed !important;
@@ -225,6 +228,10 @@ body {
     background-color: white;
     opacity: 0.4;
     padding: 10px;
+}
+
+.hidden {
+    display: none;
 }
 
 
