@@ -1,4 +1,4 @@
-var crime_annual_data = [{
+var crime_data = [{
     "city": "Katy",
     "state": "TX",
     "zip": "77494",
@@ -143,8 +143,8 @@ var crime_annual_data = [{
 }
 ]
 
-var state_avg = [{
-    "violent_crime": "4.39",
-    "property_crime": "25.63"
+var crime_state_avg = [{
+    "state_violent_crime": "4.39",
+    "state_property_crime": "25.63"
     
 }]

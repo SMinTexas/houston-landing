@@ -63,6 +63,7 @@ function main() {
 
     locationPicker(cityIndex)
     displaySchoolData(cityIndex)
+    displayCrimeData(cityIndex)
     getWeather(lat, long)
     console.log(lat)
     GetMap(lat, long)

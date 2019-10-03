@@ -37,6 +37,7 @@
                 <p class="welcome">Welcome to the Greater Houston Area </p>
                 <div class="dd">Please Select a Community
                     <select id="community" onchange="main()" <!--onclick="main()"-->>
+                        <option velue="-1"></option>
                         <option value="0">Katy</option>
                         <option value="1">Sugar Land</option>
                         <option value="2">Cypress</option>
@@ -86,6 +87,43 @@
                         </table>
                     </div>
                 </div>
+            </div>
+            <div class="crime">
+                <div class="box-title">Crime Statistics</div>
+                <div class="data-crime-container">
+                    <div class="district-area"> Community Overview
+                        <p id="city-name" class="city-name"></p>
+                        <table class="city-table">
+                            <tr class="crime-row1">
+                                <td id="crime-item1"></td>
+                                <td id="crime-item4"></td>
+                                <td id="crime-item7"></td>
+                            </tr>
+                            <tr class="crime-row2">
+                                <td id="crime-item2"></td>
+                                <td id="crime-item5"></td>
+                                <td id="crime-item8"></td>
+                            </tr>
+                            <tr class="crime-row3">
+                                <td id="crime-item3"></td>
+                                <td id="crime-item6"></td>
+                                <td id="crime-item9"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="crime-state">State Average
+                            <table class="crime-state-table">
+                                <tr class="crime-row1State">
+                                    <td id="crime-item1State"></td>
+                                   
+                                </tr>
+                                <tr class="crime-row2State">
+                                     <td id="crime-item3State"></td>
+                                    </tr>
+                            </table>
+                        </div>
+                </div>
+            </div>
                 <div id="weather" class="weather">
                     <div class="box-title">Weather</div>
                 </div>
@@ -103,9 +141,12 @@
         
         <script src="schoolJSON.js"></script>
         <script src="school-data.js"></script>
+        <script src="crimeJSON.js"></script>
+        <script src="crime-data.js"></script>
         <script src="map.js"></script>
         <script src="weather.js"></script>
         <script src="app.js"></script>
+    
     </body>
 
 </html>
