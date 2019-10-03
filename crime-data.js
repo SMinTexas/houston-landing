@@ -1,3 +1,10 @@
+/* 
+    Houston Landing Group Project: School Data
+    Digital Crafts: Houston Immersive August 2019
+    Alina Belova, Ephraim Henderson, Steven Murray
+    September 30, 2019 - October 4, 2019
+*/
+
 function formatCity(city, state, zip) {
     console.log("city", city, "state", state, "zip",zip)
     return  city + ", " + state + " " + zip ;
@@ -6,11 +13,11 @@ function formatCity(city, state, zip) {
 function displayCrimeData(num) {
     //let city = document.getElementById("community").selectedIndex;
      
-    let districtName = document.getElementById("city-name");
-    districtName.innerText = formatCity(crime_data[num].city,
-        crime_data[num].state,
-        crime_data[num].zip
-        );
+    // let districtName = document.getElementById("city-name");
+    // districtName.innerText = formatCity(crime_data[num].city,
+    //     crime_data[num].state,
+    //     crime_data[num].zip
+    //     );
        // console.log(districtName.innerText)
        
     let murder = document.getElementById("crime-item1");
@@ -25,7 +32,6 @@ function displayCrimeData(num) {
     murder.innerText = "Murder Rate " + crime_data[num].murder;
     rape.innerText = "Rape   Rate  " + crime_data[num].rape;
     robbery.innerText = "Robbery Rate " + crime_data[num].robbery;
-    //console.log(murder.innerText, rape.innerText, robbery.innerText)
     assault.innerText = "Assault Rate " + crime_data[num].assault;
     burglary.innerText = "Burglary Rate " + crime_data[num].burglary;
     theft.innerText = "Theft Rate " + crime_data[num].theft;
@@ -35,10 +41,7 @@ function displayCrimeData(num) {
 
     let state_violent_crime = document.getElementById("crime-item1State");
     let state_property_crime = document.getElementById("crime-item3State");
-    // let stateSpend = document.getElementById("item3State");
-    // let stateRatio = document.getElementById("item4State");
-    state_violent_crime.innerText = "Violent Crime Rate " + crime_state_avg[0].state_violent_crime;
+     state_violent_crime.innerText = "Violent Crime Rate " + crime_state_avg[0].state_violent_crime;
     state_property_crime.innerText = "Property Crime Rate " + crime_state_avg[0].state_property_crime;
-    // stateSpend.innerText = "Per Pupil Spending " + state_avg[0].per_pupil_spending;
-    // stateRatio.innerText = "Students / Teachers " + state_avg[0].students_per_teacher;
+   
 }
