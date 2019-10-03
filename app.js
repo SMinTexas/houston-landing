@@ -63,8 +63,6 @@ function locationPicker(num) {
  */
 function unhide(cssSelector) {
     let element = $(cssSelector)
-    logger(element)
-    logger("unhide ran!")
     if (Array.isArray(element)) {
         element.forEach(item => {
             item.removeClass("hidden")
@@ -91,10 +89,8 @@ function hide(cssSelector) {
 
 function main() {
     let cityIndex = document.getElementById("community").selectedIndex;
-    console.log(cityIndex)
 
     if (locationPicker(cityIndex) == false) {
-        logger("No community selected")
         return false;
     }
 
