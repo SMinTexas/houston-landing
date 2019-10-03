@@ -30,7 +30,7 @@
     margin: 0;
 }
 
-.navbar {
+.navbar {position: relative;
     background-color: #999999;
     opacity: 0.8;
     padding: 20px;
@@ -57,7 +57,8 @@
     color: red !important;
     font-size: 22px ;
 } 
-.navbar-nav{ position:fixed;
+.navbar-nav{ position: absolute;
+    padding: 5px;
     right: 0;
 
 }
@@ -117,6 +118,7 @@ body {
     align-items: center;
     font-size: 13px;
     color: royalblue;
+    justify-content: space-between;
 }
 
 .state {
