@@ -96,6 +96,7 @@ function main() {
 
     unhide(".hidden")
     displaySchoolData(cityIndex)
+    displayCrimeData(cityIndex)
     getWeather(lat, long)
     GetMap(lat, long)
 }
