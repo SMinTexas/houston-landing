@@ -65,10 +65,12 @@ function unhide(cssSelector) {
     let element = $(cssSelector)
     if (Array.isArray(element)) {
         element.forEach(item => {
-            item.removeClass("hidden")
+            // item.removeClass("hidden")
+            item.slideDown(1200)
         })
     } else {
-        element.removeClass("hidden")
+        // element.removeClass("hidden")
+        element.slideDown(1200)
     }
 }
 
@@ -87,6 +89,13 @@ function hide(cssSelector) {
     }
 }
 
+function animateDivs() {
+    $("#myMap, #weather, .crime, .schools").fadeOut(300)
+    setTimeout(() => {
+        $("#myMap, #weather, .crime, .schools").fadeIn(500)
+    }, 800)
+}
+
 function main() {
     let cityIndex = document.getElementById("community").selectedIndex;
 
@@ -95,12 +104,20 @@ function main() {
     }
     
     cityIndex--
+
     unhide(".hidden")
-    displaySchoolData(cityIndex)
-    displayCrimeData(cityIndex)
-    getWeather(lat, long)
-    GetMap(lat, long)
+    animateDivs()
+
+    setTimeout(() => {
+        displaySchoolData(cityIndex)
+        displayCrimeData(cityIndex)
+        getWeather(lat, long)
+        GetMap(lat, long)
+    }, 301)
 }
 
 let lat = 29.749275
 let long = -95.367807
+$(window).on("load", () => {
+    $("#selector-box").slideDown(1200)
+})
