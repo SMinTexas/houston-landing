@@ -127,7 +127,7 @@ body {
     padding: 0;
 }
 
-.crime {
+.crime, .map {
     display: flex;
     flex-direction: columns;
     justify-content: center;
@@ -148,6 +148,10 @@ body {
     background-color: white;
     opacity: 0.4;
     padding: 10px;
+}
+
+.hidden {
+    display: none;
 }
 
 
