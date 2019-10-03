@@ -12,7 +12,6 @@ function formatDistrict(name, address, city, state, zip, phone) {
 
 function displaySchoolData(city) {
     // let city = document.getElementById("community").selectedIndex;
-    city-- //Fixes index bug.
 
     let districtName = document.getElementById("district-name");
     districtName.innerText = formatDistrict(school_data[city].school_district,
