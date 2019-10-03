@@ -88,12 +88,13 @@ function hide(cssSelector) {
 }
 
 function main() {
-    let cityIndex = document.getElementById("community").selectedIndex -1;
+    let cityIndex = document.getElementById("community").selectedIndex;
 
     if (locationPicker(cityIndex) == false) {
         return false;
     }
-
+    
+    cityIndex--
     unhide(".hidden")
     displaySchoolData(cityIndex)
     displayCrimeData(cityIndex)
