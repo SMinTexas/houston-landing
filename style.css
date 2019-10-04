@@ -94,7 +94,7 @@ body {
 }
 
 .schools {
-    height: 170px;
+    min-height: 170px;
     color: royalblue;
     background-color: white;
     opacity: 0.8;
@@ -140,7 +140,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    height: 200px;
+    min-height: 200px;
     color: royalblue;
     background-color: white;
     opacity: 0.8;
@@ -149,18 +149,23 @@ body {
 
 #weatherInserted {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
 
+}
+
+#weatherInserted ul{
+    padding: 0;
 }
 
 #weatherInserted ul li {
     list-style-type: none;
-    padding: 0;
 }
 
 .crime {
-    height: 170px;
+    min-height: 170px;
     color: royalblue;
     background-color: white;
     opacity: 0.8;
@@ -253,6 +258,12 @@ body {
     .footer {
         position: absolute;
         bottom: 0;
+    }
+
+    #weatherInserted {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: inherit;
     }
 }
 
