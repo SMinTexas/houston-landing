@@ -243,10 +243,21 @@ body {
     display: none;
 }
 
-table {
+td {
+    padding: 4px;
+}
+
+.data-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* table {
     border-collapse: separate;
     border-spacing: 10px;
-}
+} */
 
 
 /* table,
@@ -278,6 +289,15 @@ td {
         justify-content: space-around;
         text-align: inherit;
     }
+
+    .data-container {
+        flex-direction: row;
+    }
+
+    #navbarNavDropdown ul{
+        margin-left: auto;
+    }
+
 }
 
 
