@@ -57,11 +57,10 @@
 .navbar-brand {
     font-family: 'Mansalva', cursive;
     color: red !important;
-    font-size: 22px;
-}
-
-.navbar-nav {
-    position: absolute;
+    font-size: 22px ;
+} 
+.navbar-nav{ 
+    /* position: absolute; Navbar Bug */
     padding: 5px;
     right: 0;
 }
