@@ -25,12 +25,14 @@
         font-size: 35px !important;
     }
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
 }
 
-.navbar {position: relative;
+.navbar {
+    position: relative;
     background-color: #999999;
     opacity: 0.8;
     padding: 20px;
@@ -52,7 +54,7 @@
     color: black;
 }
 
- .navbar-brand {
+.navbar-brand {
     font-family: 'Mansalva', cursive;
     color: red !important;
     font-size: 22px ;
@@ -61,8 +63,8 @@
     /* position: absolute; Navbar Bug */
     padding: 5px;
     right: 0;
-
 }
+
 .nav-link {
     align-items: right;
 }
@@ -134,6 +136,7 @@ body {
     align-items: center;
     font-size: 13px;
     color: royalblue;
+    vertical-align: bottom;
 }
 
 .weather {
@@ -154,10 +157,9 @@ body {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-
 }
 
-#weatherInserted ul{
+#weatherInserted ul {
     padding: 0;
 }
 
@@ -172,7 +174,6 @@ body {
     opacity: 0.8;
     border: 1px solid royalblue;
 }
-
 
 .city-name {
     font-size: 14px;
@@ -199,8 +200,8 @@ body {
     order: 1;
     flex-grow: 2;
     color: black;
-
 }
+
 .crime-state {
     font-size: 17px;
     padding: 10px;
@@ -224,7 +225,7 @@ body {
     color: royalblue;
     background-color: white;
     /* opacity: 0.8; */
- border: 1px solid royalblue;
+    border: 1px solid royalblue;
 }
 
 .footer {
@@ -241,6 +242,18 @@ body {
 .hidden {
     display: none;
 }
+
+table {
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+
+/* table,
+th,
+td {
+    border: 1px solid black;
+} */
 
 
 /* SHARED: MEDIUM AND LARGE SCREENS */
@@ -260,16 +273,12 @@ body {
         position: absolute;
         bottom: 0;
     }
-
     #weatherInserted {
         flex-direction: row;
         justify-content: space-around;
         text-align: inherit;
     }
 }
-
-
-
 
 
 /* Mobile (default) */

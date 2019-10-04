@@ -66,11 +66,11 @@ function unhide(cssSelector) {
     if (Array.isArray(element)) {
         element.forEach(item => {
             // item.removeClass("hidden")
-            item.slideDown(1200)
+            item.slideDown(600)
         })
     } else {
         // element.removeClass("hidden")
-        element.slideDown(1200)
+        element.slideDown(600)
     }
 }
 
