@@ -57,7 +57,8 @@
     color: red !important;
     font-size: 22px ;
 } 
-.navbar-nav{ position: absolute;
+.navbar-nav{ 
+    /* position: absolute; Navbar Bug */
     padding: 5px;
     right: 0;
 
