@@ -21,10 +21,10 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="houston-landing.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About us</a>
+                    <a class="nav-link" href="about.html">About</a>
                 </li>
             </ul>
         </div>
@@ -36,7 +36,7 @@
             <div id="selector-box" class="box hidden">
                 <p class="welcome">Welcome to the Greater Houston Area </p>
                 <div class="dd">Please Select a Community
-                    <select id="community" onchange="main()" <!--onclick="main()"-->>
+                    <select id="community" onchange="main()" <!--onclick="main()" -->>
                         <option value="0">Choose</option>
                         <option value="1">Katy</option>
                         <option value="2">Sugar Land</option>
@@ -89,7 +89,7 @@
                 </div>
             </div>
             <div class="crime hidden">
-                <div class="box-title">Crime Statistics</div>
+                <div class="box-title"><abbr title="per 1000 of the citizens">Crime Statistics</abbr></div>
                 <div class="data-crime-container">
                     <div class="district-area"> Community Overview
                         <p id="city-name" class="city-name"></p>
@@ -112,42 +112,42 @@
                         </table>
                     </div>
                     <div class="crime-state">State Average
-                            <table class="crime-state-table">
-                                <tr class="crime-row1State">
-                                    <td id="crime-item1State"></td>
-                                   
-                                </tr>
-                                <tr class="crime-row2State">
-                                     <td id="crime-item3State"></td>
-                                    </tr>
-                            </table>
-                        </div>
+                        <table class="crime-state-table">
+                            <tr class="crime-row1State">
+                                <td id="crime-item1State"></td>
+
+                            </tr>
+                            <tr class="crime-row2State">
+                                <td id="crime-item3State"></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
-              
-                <div id="weather" class="weather hidden">
-                    <div class="box-title">Weather</div>
-                </div>
-                <div id="myMap" class="map hidden">
-                    <div class="box-title">Crime</div>
-                </div>
+
+            <div id="weather" class="weather hidden">
+                <div class="box-title">Weather</div>
+            </div>
+            <div id="myMap" class="map hidden">
+                <div class="box-title">Crime</div>
+            </div>
         </main>
-        </div>
-        <footer class="footer">© Copyright</footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&branch=experimental&key=Av5MMRmmgxMVJ5ja_cgyNRqqbcB5psjEy9CByoD7nPFLSS-wlc4ofUPIGgJP1hqQ' async defer></script>
-        
-        
-        <script src="schoolJSON.js"></script>
-        <script src="school-data.js"></script>
-        <script src="crimeJSON.js"></script>
-        <script src="crime-data.js"></script>
-        <script src="map.js"></script>
-        <script src="weather.js"></script>
-        <script src="app.js"></script>
-    
-    </body>
+    </div>
+    <footer class="footer">© Copyright</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&branch=experimental&key=Av5MMRmmgxMVJ5ja_cgyNRqqbcB5psjEy9CByoD7nPFLSS-wlc4ofUPIGgJP1hqQ' async defer></script>
+
+
+    <script src="schoolJSON.js"></script>
+    <script src="school-data.js"></script>
+    <script src="crimeJSON.js"></script>
+    <script src="crime-data.js"></script>
+    <script src="map.js"></script>
+    <script src="weather.js"></script>
+    <script src="app.js"></script>
+
+</body>
 
 </html>

@@ -1,0 +1,155 @@
+/* SHARED: MEDIUM AND LARGE SCREENS */
+
+@media screen and (min-width: 800px) {
+    .header {
+        font-size: 20px;
+        padding: 40px;
+    }
+    .container {
+        position: relative;
+    }
+    .main {
+        position: absolute;
+    }
+    .sidebar {
+        position: absolute;
+    }
+    /* .footer {
+        position: absolute;
+        bottom: 0;
+    } */
+}
+
+
+/* LARGE DESKTOP SCREEN */
+
+@media screen and (min-width: 960px) {
+    .sidebar {
+        width: 20%;
+    }
+    .sidebar-left {
+        left: 0;
+        position: absolute;
+    }
+    .sidebar-right {
+        right: 0;
+        position: absolute;
+    }
+    .main {
+        width: 60%;
+        left: 20%;
+    }
+}
+
+
+/* MEDIUM SCREENS (laptops, iPads, etc) */
+
+@media screen and (min-width: 800px) and (max-width: 960px) {
+    .main {
+        width: 80%;
+    }
+    .sidebars {
+        position: absolute;
+        width: 20%;
+        right: 0;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.navbar {
+    position: relative;
+    background-color: #999999;
+    opacity: 0.8;
+    padding: 20px;
+}
+
+.navbar-brand {
+    font-family: 'Mansalva', cursive;
+    color: red !important;
+    font-size: 45px !important;
+}
+
+.navbar-nav {
+    position: absolute;
+    align-items: center;
+    right: 0;
+}
+
+.nav-link {
+    align-items: right;
+}
+
+.container {
+    margin: 10px 0;
+    display: flex;
+    align-items: stretch;
+}
+
+.main {
+    order: 2;
+    flex-grow: 2;
+    padding: 30px;
+}
+
+.sidebar-left {
+    order: 1;
+    flex-grow: 1;
+    min-width: 200px;
+    padding: 20px;
+    border-right: 2px solid #999;
+    text-align: center;
+}
+
+.sidebar-right {
+    order: 3;
+    flex-grow: 1;
+    padding: 20px;
+    min-width: 200px;
+    border-left: 2px solid #999;
+    text-align: center;
+}
+
+.main>a,
+h1,
+h4,
+h5 {
+    text-align: center;
+}
+
+.main>img {
+    height: auto;
+    min-width: 100%;
+    padding: 5px;
+}
+
+a>img {
+    height: 150px;
+    width: 200px;
+    padding: 5px;
+}
+
+.footer {
+    text-align: left;
+    position: fixed;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 5px;
+    background-color: white;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    padding: 5px 5px;
+}

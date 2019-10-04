@@ -7,122 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Houston Landing</title>
     <link href="https://fonts.googleapis.com/css?family=Mansalva|Acme&display=swap" rel="stylesheet">
-    <!-- <link href="style.css" rel="stylesheet"> -->
+    <link href="about.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-        .navbar {
-            background-color: #999999;
-            opacity: 0.8;
-            padding: 20px;
-        }
-        
-        .navbar-brand {
-            font-family: 'Mansalva', cursive;
-            color: red !important;
-            font-size: 22px !important;
-        }
-        
-        .navbar-nav {
-            align-items: center;
-        }
-        
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 100vh;
-            margin: 0;
-            background-image: none;
-            font-family: "Helvetica Neue", sans-serif;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-        
-        .container {
-            margin: 10px 0;
-            display: flex;
-            align-items: stretch;
-        }
-        
-        .main {
-            order: 2;
-            flex-grow: 2;
-            padding: 30px;
-        }
-        
-        .main>a,
-        h1,
-        h4,
-        h5 {
-            text-align: center;
-        }
-        
-        .main>img {
-            height: 300px;
-            width: 450px;
-            padding: 5px;
-        }
-        
-        .sidebar-left {
-            order: 1;
-            flex-grow: 1;
-            min-width: 200px;
-            padding: 20px;
-            border-right: 2px solid #999;
-            text-align: center;
-        }
-        
-        .sidebar-right {
-            order: 3;
-            flex-grow: 1;
-            min-width: 200px;
-            padding: 20px;
-            border-left: 2px solid #999;
-            text-align: center;
-        }
-        
-        a>img {
-            height: 200px;
-            width: 250px;
-            padding: 5px;
-        }
-        
-        .footer {
-            text-align: left;
-            position: relative;
-            left: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 5px;
-            background-color: white;
-            /* opacity: 0.4; */
-            padding: 10px;
-        }
-        /* LARGE DESKTOP */
-        /* @media screen and (min-width: 960px) {
-            .navbar-brand {
-                font-family: 'Mansalva', cursive;
-                color: red !important;
-                font-size: 55px !important;
-            }
-            .main {
-                width: 100%;
-                height: 80%;
-            }
-        } */
-        /* MEDIUM SCREENS (Laptops, iPads, etc...) */
-        /* @media screen and (min-width: 800px) and (max-width: 960px) {
-            .main {
-                width: 100%;
-            }
-            .navbar-brand {
-                font-family: 'Mansalva', cursive;
-                color: red !important;
-                font-size: 35px !important;
-            }
-        } */
-    </style>
+
 </head>
 
 <body>
@@ -159,31 +46,40 @@
             <img src="images/about/houston_aerial.jpeg" alt="from-the-air">
             <img src="images/about/houston_grafitti_art.jpeg" alt="grafitti">
         </main>
-        <aside class="sidebar-left">
-            <h2>Our Communities</h2>
-            <a href="https://www.clearlakearea.com/"><img src="images/about/clearlake.jpeg" alt="Clear Lake"></a>
-            <a href="https://en.wikipedia.org/wiki/Cypress,_Texas"><img src="images/about/cypress.jpeg" alt="Cypress"></a>
-            <a href="https://www.cityofkaty.com/"><img src="images/about/katy.jpeg" alt="Katy"></a>
-            <a href="https://www.kingwood.com/"><img src="images/about/kingwood.jpeg" alt="Kingwood"></a>
-            <a href="http://www.ci.la-porte.tx.us/"><img src="images/about/laporte_bridge.jpeg" alt="La Porte"></a>
-            <a href="https://www.pearlandtx.gov/"><img src="images/about/pearland.jpeg" alt="Pearland"></a>
-            <a href="https://www.sugarlandtx.gov/"><img src="images/about/sl_sugar_factory.jpeg" alt="Sugar Land"></a>
-            <a href="https://www.thewoodlandstownship-tx.gov/"><img src="images/about/woodlands.jpeg" alt="The Woodlands"></a>
-        </aside>
-        <aside class="sidebar-right">
-            <h2>Things To Do</h2>
-            <a href="https://www.kemahboardwalk.com/"><img src="images/about/boardwalk.jpeg" alt="Boardwalk"></a>
-            <a href="https://www.simon.com/mall/the-galleria"><img src="images/about/galleria.jpeg" alt="Galleria"></a>
-            <a href="https://www.grbhouston.com/"><img src="images/about/georgerbrown.jpeg" alt="George R Brown"></a>
-            <a href="https://www.nasa.gov/centers/johnson/home/index.html"><img src="images/about/jsc.jpeg" alt="Johnson Space Center"></a>
-            <a href="https://www.katy.com/la-centerra/"><img src="images/about/katy_la_centera.jpeg" alt="La Centera"></a>
-            <a href="https://www.sanjacinto-museum.org/"><img src="images/about/laporte_monument.jpeg" alt="San Jacinto Monument"></a>
-            <a href="https://www.mlb.com/astros"><img src="images/about/mmp_ws.jpeg" alt="Houston Astros"></a>
-            <a href="https://www.houstontexans.com/"><img src="images/about/nrg_day.jpeg" alt="Houston Texans"></a>
-            <a href="https://www.houstonzoo.org/"><img src="images/about/zoo.jpeg" alt="Houston Zoo"></a>
-        </aside>
+        <div class="sidebars">
+            <aside class="sidebar sidebar-left">
+                <h2>Our Communities</h2>
+                <a href="https://www.clearlakearea.com/"><img src="images/about/clearlake.jpeg" alt="Clear Lake"></a>
+                <a href="https://en.wikipedia.org/wiki/Cypress,_Texas"><img src="images/about/cypress.jpeg" alt="Cypress"></a>
+                <a href="https://www.cityofkaty.com/"><img src="images/about/katy.jpeg" alt="Katy"></a>
+                <a href="https://www.kingwood.com/"><img src="images/about/kingwood.jpeg" alt="Kingwood"></a>
+                <a href="http://www.ci.la-porte.tx.us/"><img src="images/about/laporte_bridge.jpeg" alt="La Porte"></a>
+                <a href="https://www.pearlandtx.gov/"><img src="images/about/pearland.jpeg" alt="Pearland"></a>
+                <a href="https://www.sugarlandtx.gov/"><img src="images/about/sl_sugar_factory.jpeg" alt="Sugar Land"></a>
+                <a href="https://www.thewoodlandstownship-tx.gov/"><img src="images/about/woodlands.jpeg" alt="The Woodlands"></a>
+            </aside>
+            <aside class="sidebar sidebar-right">
+                <h2>Things To Do</h2>
+                <a href="https://www.kemahboardwalk.com/"><img src="images/about/boardwalk.jpeg" alt="Boardwalk"></a>
+                <a href="https://www.simon.com/mall/the-galleria"><img src="images/about/galleria.jpeg" alt="Galleria"></a>
+                <a href="https://www.grbhouston.com/"><img src="images/about/georgerbrown.jpeg" alt="George R Brown"></a>
+                <a href="https://www.nasa.gov/centers/johnson/home/index.html"><img src="images/about/jsc.jpeg" alt="Johnson Space Center"></a>
+                <a href="https://www.katy.com/la-centerra/"><img src="images/about/katy_la_centera.jpeg" alt="La Centera"></a>
+                <a href="https://www.sanjacinto-museum.org/"><img src="images/about/laporte_monument.jpeg" alt="San Jacinto Monument"></a>
+                <a href="https://www.mlb.com/astros"><img src="images/about/mmp_ws.jpeg" alt="Houston Astros"></a>
+                <a href="https://www.houstontexans.com/"><img src="images/about/nrg_day.jpeg" alt="Houston Texans"></a>
+                <a href="https://www.houstonzoo.org/"><img src="images/about/zoo.jpeg" alt="Houston Zoo"></a>
+            </aside>
+        </div>
     </div>
-    <footer class="footer">© Digital Crafts Students: Alina Belova, Ephriam Henderson, Steven Murray</footer>
+    <footer class="footer">
+        <div class="footer-left">
+            © Digital Crafts Students: Alina Belova, Ephriam Henderson, Steven Murray
+        </div>
+        <div class="footer-right">
+            <a href="credits.html">Attributions</a>
+        </div>
+    </footer>
 </body>
 
 </html>

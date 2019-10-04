@@ -28,22 +28,22 @@ var crime_data = [{
     "property_crime": "14.57",
 },
 {
-    "city": "Houston",
+    "city": "Cypress",
     "state": "TX",
-    "zip": "77065",
-    "murder":"0.12" ,
-    "rape": "0.60",
-    "robbery": "4.26",
-    "assault": "6.20",
-    "burglary": "7.46",
-    "theft": "29.95",
-    "motor_vehicle_theft": "5.05",
-    "violent_crime": "11.17",
-    "property_crime": "42.46"
-
+    "zip": "77092",
+    "murder":"0" ,
+    "rape": "13",
+    "robbery": "15",
+    "assault": "29",
+    "burglary": "59",
+    "theft": "572",
+    "motor_vehicle_theft": "35",
+    "violent_crime": "1.24",
+    "property_crime": "13.29"
 },
+
 {
-    "city": "Conroe",
+    "city": "The Woodlands",
     "state": "TX",
     "zip": "77304",
     "murder":"0.05" ,
@@ -58,7 +58,7 @@ var crime_data = [{
 
 },
 {
-    "city": "Humble",
+    "city": "Kingwood",
     "state": "TX",
     "zip": "77347",
     "murder":"0.05" ,
@@ -87,7 +87,7 @@ var crime_data = [{
 },
 {
 
-    "city": "League City",
+    "city": "Clear Lake",
     "state": "TX",
     "murder":"0.03" ,
     "rape": "0.32",
@@ -113,20 +113,7 @@ var crime_data = [{
     "violent_crime": "0.57",
     "property_crime": "14.47"
 },
-{
-    "city": "Cypress",
-    "state": "TX",
-    "zip": "77092",
-    "murder":"0" ,
-    "rape": "13",
-    "robbery": "15",
-    "assault": "29",
-    "burglary": "59",
-    "theft": "572",
-    "motor_vehicle_theft": "35",
-    "violent_crime": "1.24",
-    "property_crime": "13.29"
-},
+
 {
     "city": "Bellaire",
     "state": "TX",
@@ -140,7 +127,22 @@ var crime_data = [{
     "motor_vehicle_theft": "0.64",
     "violent_crime": "1.38",
     "property_crime": "16.07"
-}
+},
+{
+    "city": "Mid-Town",
+    "state": "TX",
+    "zip": "77065",
+    "murder":"0.12" ,
+    "rape": "0.60",
+    "robbery": "4.26",
+    "assault": "6.20",
+    "burglary": "7.46",
+    "theft": "29.95",
+    "motor_vehicle_theft": "5.05",
+    "violent_crime": "11.17",
+    "property_crime": "42.46"
+
+},
 ]
 
 var crime_state_avg = [{
